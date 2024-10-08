@@ -1,91 +1,4 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #181818;
-    color: #ffffff;
-    display: flex;
-}
 
-/* Sidebar */
-.sidebar {
-    width: 300px;
-    background-color: #1f1f1f;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.sidebar h1 {
-    font-size: 24px;
-    color: #ffbf00;
-}
-
-.create-btn {
-    background-color: #ffbf00;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-.discover input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 5px;
-}
-
-.recent-chats ul {
-    list-style: none;
-    padding: 0;
-}
-
-.recent-chats li {
-    margin: 10px 0;
-}
-
-/* Main Content */
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background-color: #2a2a2a;
-}
-
-header h2 {
-    margin-bottom: 20px;
-}
-
-.chat-options .card {
-    background-color: #333333;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.chat-options .card button {
-    background-color: #ffbf00;
-    color: black;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.for-you .character-list {
-    display: flex;
-    gap: 20px;
-}
-
-.character {
-    width: 150px;
-}
-
-.character img {
-    width: 100%;
-    border-radius: 10px;
-}
 /* Character Section */
 .characters-section {
     margin-top: 30px;
@@ -94,7 +7,7 @@ header h2 {
 .character-cards {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* This makes the cards wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .character-card {
@@ -103,7 +16,6 @@ header h2 {
     padding: 15px;
     width: 200px;
     text-align: center;
-    transition: transform 0.2s; /* Adds a hover effect */
 }
 
 .character-card img {
@@ -117,11 +29,55 @@ header h2 {
     color: #fff;
 }
 
-.character-card p {
-    font-size: 14px;
-    color: #bbb;
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #121212;
+    padding: 20px;
+    height: 100vh;
 }
 
-.character-card:hover {
-    transform: scale(1.05); /* Slightly enlarges the card on hover */
+.sidebar h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.create-btn {
+    background-color: #3a3a3a;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+}
+
+.sidebar nav ul li a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+    color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #303030;
+    color: #fff;
 }
